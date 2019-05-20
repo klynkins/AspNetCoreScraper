@@ -13,7 +13,6 @@ namespace AspNetCoreScraper.Models
         public string Change { get; set; }
         public string PChange { get; set; }
         public string Currency { get; set; }
-        //[Display(Name = "MarketTime"), DataType(DataType.Date)]
         public DateTime MarketTime { get; set; }
         public string Volume { get; set; }
         public string AVolume { get; set; }
