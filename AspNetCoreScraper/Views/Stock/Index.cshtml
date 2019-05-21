@@ -15,6 +15,20 @@
             </tr>
         </thead>
 
+        @foreach (var stock in Model.Stocks)
+        {
+            <tr>
+                <td>
+                    <input type="checkbox" class="done-checkbox" />
+                </td>
+                <td>@stock.ID</td>
+                <td>@stock.Symbol</td>
+            </tr>
+        }
     </table>
+
+    <div class="panel-footer add-item-fora">
+
+    </div>
 </div>
 

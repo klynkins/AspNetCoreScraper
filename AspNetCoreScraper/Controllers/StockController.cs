@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AspNetCoreScraper.Controllers
 {
-    public class StocksController : Controller
+    public class StockController : Controller
     {
         public IActionResult Index()
         {
