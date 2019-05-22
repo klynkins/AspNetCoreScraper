@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using AspNetCoreScraper.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using AspNetCoreScraper.Services;
 
 namespace AspNetCoreScraper
 {
@@ -43,6 +44,9 @@ namespace AspNetCoreScraper
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc();
+
+            services.AddSingleton<IStockService, FakeStockService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

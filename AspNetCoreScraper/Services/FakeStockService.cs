@@ -8,14 +8,14 @@ namespace AspNetCoreScraper.Services
 {
     public class FakeStockService : IStockService
     {
-        public Task<Stock[]> GetIncompleteStocksAsync()
+        public Task<Stock[]> GetIncompleteItemsAsync()
         {
-         var stock1 = new Stock
+         var item1 = new Stock
          {
              ID = 1,
              Symbol = "AZN"
          };
-        return Task.FromResult(new[] {stock1 });
+        return Task.FromResult(new[] {item1 });
         }
     }
        

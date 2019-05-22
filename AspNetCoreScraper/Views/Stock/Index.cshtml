@@ -15,14 +15,14 @@
             </tr>
         </thead>
 
-        @foreach (var stock in Model.Stocks)
+        @foreach (var item in Model.Items)
         {
             <tr>
                 <td>
                     <input type="checkbox" class="done-checkbox" />
                 </td>
-                <td>@stock.ID</td>
-                <td>@stock.Symbol</td>
+                <td>@item.ID</td>
+                <td>@item.Symbol</td>
             </tr>
         }
     </table>

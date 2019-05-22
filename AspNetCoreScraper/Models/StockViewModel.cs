@@ -7,6 +7,6 @@ namespace AspNetCoreScraper.Models
 {
     public class StockViewModel
     {
-        public Stock[] Stocks { get; set; }
+        public Stock[] Items { get; set; }
     }
 }
