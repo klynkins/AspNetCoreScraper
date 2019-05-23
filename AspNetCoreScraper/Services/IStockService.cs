@@ -6,7 +6,7 @@ using AspNetCoreScraper.Models;
 
 namespace AspNetCoreScraper.Services
 {
-    public class IStockService
+    public interface IStockService
     {
         Task<Stock[]> GetIncompleteItemsAsync();
     }
