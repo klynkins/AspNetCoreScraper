@@ -13,6 +13,7 @@ namespace AspNetCoreScraper.Models
         [Required]
         public string Title { get; set; }
         public DateTimeOffset? DueAt { get; set; }
+        public string UserId { get; set; }
 
         //public string Symbol { get; set; }
         //public string LastPrice { get; set; }
