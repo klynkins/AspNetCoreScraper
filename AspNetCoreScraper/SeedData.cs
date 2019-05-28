@@ -19,13 +19,13 @@ namespace AspNetCoreScraper
 
             var userManager = services
                  .GetRequiredService<UserManager<IdentityUser>>();
-            await EnsureTestAdminAsync(userManager);
+            //await EnsureTestAdminAsync(userManager);
         }
 
         private static async Task EnsureRolesAsync(RoleManager<IdentityRole> roleManager)
         {
             var alreadyExists = await roleManager
-                .RoleExistsAsync(IdentityConstants.AdministratorRole);
+                //.RoleExistsAsync(IdentityConstants.AdministratorRole);
 
             if (alreadyExists) return;
 
