@@ -45,9 +45,9 @@ namespace AspNetCoreScraper
                 UserName = "admin@todo.local",
                 Email = "admin@todo.local"
             };
-           await userManager.CreateAsync(
+           //await userManager.CreateAsync(
                 testAdmin, "NotSecure123");
-           await userManager.AddToRoleAsync(
+           //await userManager.AddToRoleAsync(
                 testAdmin, Constants.AdministratorRole);
         }
     }
