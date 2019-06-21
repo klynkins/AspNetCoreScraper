@@ -15,14 +15,14 @@ namespace AspNetCoreScraper.Models
         public DateTimeOffset? DueAt { get; set; }
         public string UserId { get; set; }
 
-        //public string Symbol { get; set; }
-        //public string LastPrice { get; set; }
-        //public string Change { get; set; }
-        //public string PChange { get; set; }
-        //public string Currency { get; set; }
-        //public DateTime MarketTime { get; set; }
-        //public string Volume { get; set; }
-        //public string AVolume { get; set; }
-        //public string MarketCap { get; set; }
+        public string Symbol { get; set; }
+        public string LastPrice { get; set; }
+        public string Change { get; set; }
+        public string PChange { get; set; }
+        public string Currency { get; set; }
+        public DateTime MarketTime { get; set; }
+        public string Volume { get; set; }
+        public string AVolume { get; set; }
+        public string MarketCap { get; set; }
     }
 }
