@@ -25,14 +25,14 @@ namespace AspNetCoreScraper
         private static async Task EnsureRolesAsync(RoleManager<IdentityRole> roleManager)
         {
             var alreadyExists = await roleManager
-                .RoleExistsAsync(IdentityConstants.AdministratorRole);
+                .RoleExistsAsync(Constants.AdministratorRole);
 
             if (alreadyExists) return;
 
-            await roleManager.CreateAsync(new IdentityRole(IdentityConstants.AdministratorRole));
+            await roleManager.CreateAsync(new IdentityRole(Constants.AdministratorRole));
         }
 
-        private static sync Task EnsureTestAdminAsync(UserManager<IdentityUser> userManager)
+        private static async Task EnsureTestAdminAsync(UserManager<IdentityUser> userManager)
         {
             var testAdmin = await userManager.Users
                 .Where(x => x.UserName == "admin@todo.local")
@@ -45,9 +45,9 @@ namespace AspNetCoreScraper
                 UserName = "admin@todo.local",
                 Email = "admin@todo.local"
             };
-           //await userManager.CreateAsync(
+           await userManager.CreateAsync(
                 testAdmin, "NotSecure123");
-           //await userManager.AddToRoleAsync(
+           await userManager.AddToRoleAsync(
                 testAdmin, Constants.AdministratorRole);
         }
     }
