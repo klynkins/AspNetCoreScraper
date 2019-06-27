@@ -5,7 +5,7 @@
 @inject SignInManager<IdentityUser> signInManager
 @inject UserManager<IdentityUser> userManager
 
-@if (signInManager .IsSignedIn(User))
+@if (signInManager.IsSignedIn(User))
 {
     var currentUser = await UserManager.GetUserAsync(User);
 
