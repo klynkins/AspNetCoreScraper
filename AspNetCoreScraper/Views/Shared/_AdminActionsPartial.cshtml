@@ -7,9 +7,9 @@
 
 @if (signInManager.IsSignedIn(User))
 {
-    //var currentUser = await UserManager.GetUserAsync(User);
+    var currentUser = await UserManager.GetUserAsync(User);
 
-    //var isAdmin = currentUser != null
+    var isAdmin = currentUser != null
         && await userManager.IsInRoleAsync(
             currentUser,
             Constants.AdministratorRole);
