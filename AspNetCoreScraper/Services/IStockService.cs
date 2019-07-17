@@ -10,8 +10,8 @@ namespace AspNetCoreScraper.Services
 {
     public interface IStockService
     {
-        Task<Stock[]> GetIncompleteItemsAsync(IdentityUser user);
-        Task<bool> AddItemAsync(Stock newItem, IdentityUser user);
-        Task<bool> MarkDoneAsync(Guid id, IdentityUser user);
+        //Task<Stock[]> GetIncompleteItemsAsync(IdentityUser user);
+        //Task<bool> AddItemAsync(Stock newItem, IdentityUser user);
+        //Task<bool> MarkDoneAsync(Guid id, IdentityUser user);
     }
 }
