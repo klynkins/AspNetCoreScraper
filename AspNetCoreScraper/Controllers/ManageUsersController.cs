@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AspNetCoreScraper.Controllers
 {
+    [Authorize(Roles = "Administrator")]
     public class ManageUsersController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
